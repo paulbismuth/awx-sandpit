@@ -1,1 +1,7 @@
 plugin: amazon.aws.aws_ec2
+hostnames:
+  - tag:Name
+  - dns-name
+  - private-dns-name
+include_filters:
+  - instance-state-name: running
