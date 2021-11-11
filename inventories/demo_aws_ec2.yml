@@ -3,5 +3,9 @@ hostnames:
   - tag:Name
   - dns-name
   - private-dns-name
+keyed_groups:
+  - key: tags.Name
+    prefix: tag_Name_
+    separator: ""
 include_filters:
   - instance-state-name: running
